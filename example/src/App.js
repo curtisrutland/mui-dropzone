@@ -149,7 +149,7 @@ class App extends Component {
         {this.renderTable()}
         {this.renderDialog()}
         {this.renderSnackbar()}
-        <Button href="http://github.saas.amherst.com/crutland/mui-dropzone" target="_blank" className={classes.link}>
+        <Button href="http://github.com/curtisrutland/mui-dropzone" target="_blank" className={classes.link}>
           View Project on Github Enterprise
         </Button>
       </div>
