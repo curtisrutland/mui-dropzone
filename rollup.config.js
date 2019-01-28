@@ -25,6 +25,12 @@ export default {
       sourcemap: true
     }
   ],
+  external: [
+    "@material-ui/core",
+    "@material-ui/icons",
+    "xlsx",
+    "typeface-roboto"
+  ],
   plugins: [
     external(),
     postcss({
