@@ -103,12 +103,12 @@ class FileDropZone extends Component<Props, State> {
 
     render() {
         const {
-            classes, className = "", style,
+            classes, className = "", dragOverClassName = "", style,
             elevation = 2, dragOverElevation = 10,
             message = "Drag and Drop Files, or Click to Select Files",
             dragOverMessage = "Drop File(s) to Upload",
         } = this.props;
-        const paperClassName = `${className} ${classes.paper}`.trim();
+        const paperClassName = `${this.state.isDragOver ? (dragOverClassName === "" ? dragOverClassName : className) : className} ${classes.paper}`.trim();
         const paperElevation = this.state.isDragOver ? dragOverElevation : elevation;
         const displayMessage = this.state.isDragOver ? dragOverMessage : message;
         return (
