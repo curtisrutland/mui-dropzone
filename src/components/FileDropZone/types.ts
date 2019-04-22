@@ -6,6 +6,7 @@ interface FileDropZoneProps {
     dragOverMessage?: string;
     elevation?: number;
     dragOverElevation?: number;
+    dragOverClassName?: string;
     className?: string;
     style?: CSSProperties;
     acceptedExtensions?: string[];
