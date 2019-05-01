@@ -51,7 +51,7 @@ class Example extends React.Component {
 * `dragOverMessage`: set the message displayed when a file is dragged over the dropzone
 * `acceptedExtensions`: similar to `acceptedMimeTypes`, but looks at file extension. **not** mutually exclusive with `acceptedMimeTypes`.
 * `blockOtherDrops`: disallows any file drop events on the page anywhere but the dropzone. Useful to prevent users from dropping files in the wrong area.
-
+* `dragOverClassName`: set the classname when a file is dragged over the dropzone. This will replace the className property
 ### excel
 #### a module with excel file helpers.
 
