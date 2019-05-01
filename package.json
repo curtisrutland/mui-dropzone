@@ -1,6 +1,6 @@
 {
   "name": "mui-dropzone",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "author": "curtisrutland",
   "license": "MIT",
@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "keywords": ["material-ui", "mui", "material", "dropzone", "excel", "drag", "drop", "react"],
   "engines": {
     "node": ">=8",
     "npm": ">=5"
