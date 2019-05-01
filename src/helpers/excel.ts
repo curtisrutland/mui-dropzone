@@ -27,7 +27,7 @@ async function loadSpreadsheetDataFromFile(file: File): Promise<string> {
 }
 
 function loadWorkbookFromFileData(data: string): ExcelData {
-    const wb = XLSX.read(data, { type: "base64", cellStyles: true });
+    const wb = XLSX.read(data, { type: "base64", cellStyles: true, cellDates: true });
     var sheetArray = wb.SheetNames
         .map(name => ({ name, rows: XLSX.utils.sheet_to_json(wb.Sheets[name]) }));
     let results: ExcelData = {};
